@@ -19,10 +19,15 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 group :development, :test do
+  # Use RSpec for specs
+  gem 'rspec-rails', '3.1.0'
+  # Use Factory Girl for generating random test data
+  gem 'factory_girl_rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
 end
 
 group :development do
